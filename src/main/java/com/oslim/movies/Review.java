@@ -1,5 +1,7 @@
 package com.oslim.movies;
 
+import java.time.LocalDateTime;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,5 +19,9 @@ public class  Review {
     @Id
     private ObjectId id;
     private String body;
+
+     public Review(String body) {
+        this.body = body;
+ }
 
 }

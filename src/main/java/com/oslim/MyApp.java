@@ -1,4 +1,4 @@
-package com.oslim.product;
+package com.oslim;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,12 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class ProductApplication {
+public class MyApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductApplication.class, args);
+		SpringApplication.run(MyApp.class, args);
 	}
-
-	
 
 }
